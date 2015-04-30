@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastScroll", "FastScroll.csproj", "{1955413A-B49D-4DC4-8DB7-F0FFFA665EF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastScroll.UITests", "FastScroll.UITests\FastScroll.UITests.csproj", "{91804CFF-8E3C-4AC7-B2DE-0F32327C97B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1955413A-B49D-4DC4-8DB7-F0FFFA665EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1955413A-B49D-4DC4-8DB7-F0FFFA665EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1955413A-B49D-4DC4-8DB7-F0FFFA665EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1955413A-B49D-4DC4-8DB7-F0FFFA665EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91804CFF-8E3C-4AC7-B2DE-0F32327C97B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91804CFF-8E3C-4AC7-B2DE-0F32327C97B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91804CFF-8E3C-4AC7-B2DE-0F32327C97B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91804CFF-8E3C-4AC7-B2DE-0F32327C97B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
