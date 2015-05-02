@@ -77,7 +77,7 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\drawable\recycler_view_fast_scroller__bubble.xml" />
     <AndroidResource Include="Resources\drawable\recycler_view_fast_scroller__handle.xml" />
-    <AndroidResource Include="FastScroller.axml" />
+    <AndroidResource Include="Resources\layout\FastScroller.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
