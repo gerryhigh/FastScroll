@@ -7,7 +7,7 @@ using Android.Support.V7.Widget;
 
 namespace FastScroll
 {
-	public class LargeAdapter : RecyclerView.Adapter
+	public class LargeAdapter : BaseRecyclerAdapter
 	{
 		public class MyView : RecyclerView.ViewHolder, View.IOnClickListener
 		{
@@ -57,7 +57,7 @@ namespace FastScroll
 			}
 		}
 
-		public string GetTextToShowInBubble(int pos)
+		public override string GetTextToShowInBubble(int pos)
 		{
 			return items[pos][0].ToString();
 		}

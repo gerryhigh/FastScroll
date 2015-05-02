@@ -37,7 +37,7 @@ namespace FastScroll
 			recyclerView.SetAdapter(new LargeAdapter(items));
 			recyclerView.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
 			FastScroller fastScroller = FindViewById<FastScroller>(Resource.Id.fastscroller);
-			fastScroller.setRecyclerView(recyclerView);
+			fastScroller.SetRecyclerView(recyclerView);
 		}
 	}
 }

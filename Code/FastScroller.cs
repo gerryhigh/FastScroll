@@ -86,10 +86,10 @@ namespace FastScroll
 			return base.OnTouchEvent(e);
 		}
 
-		public void setRecyclerView(RecyclerView recyclerView)
+		public void SetRecyclerView(RecyclerView rv)
 		{
-			this.recyclerView = recyclerView;
-			recyclerView.SetOnScrollListener(scrollListener);
+			this.recyclerView = rv;
+			this.recyclerView.SetOnScrollListener(scrollListener);
 		}
 
 		private void setRecyclerViewPosition(float y)
@@ -97,7 +97,7 @@ namespace FastScroll
 			if (recyclerView != null) {
 				var itemCount = recyclerView.GetAdapter().ItemCount;
 				float proportion;
-				if (handle.GetY() == 0)
+				if ((int)handle.GetY() == 0)
 					proportion = 0f;
 				else if (handle.GetY() + handle.Height >= height - TRACK_SNAP_RANGE)
 					proportion = 1f;
@@ -107,7 +107,7 @@ namespace FastScroll
 				int targetPos = getValueInRange(0, itemCount - 1, (int)(proportion * (float)itemCount));
 				recyclerView.ScrollToPosition(targetPos);
 
-				var adapter = recyclerView.GetAdapter() as LargeAdapter;
+				var adapter = recyclerView.GetAdapter() as BaseRecyclerAdapter;
 				bubble.Text = adapter.GetTextToShowInBubble(targetPos);
 			}
 		}
@@ -128,7 +128,6 @@ namespace FastScroll
 
 		private void showBubble()
 		{
-			AnimatorSet animatorSet = new AnimatorSet();
 			bubble.Visibility = ViewStates.Visible;
 			if(currentAnimator!=null)
 				currentAnimator.Cancel();
