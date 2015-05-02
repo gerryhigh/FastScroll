@@ -1,0 +1,41 @@
+# osx noise
+.DS_Store
+profile
+
+# xcode noise
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# svn & cvs
+.svn
+CVS
+
+*.pidb
+*.userprefs
+*.swp
+*.DS_Store
+*.nib
+*.suo
+*.user
+*.pfx
+
+*/bin/*
+*/obj/*
+*/*/bin/*
+*/*/obj/*
+*/*/*/bin/*
+*/*/*/obj/*
+*_ReSharper.*/
+
+bin/*
+obj/*
+object/*
+Components/*
+packages/*
